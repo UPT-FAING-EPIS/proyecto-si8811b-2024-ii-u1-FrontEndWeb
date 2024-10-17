@@ -111,7 +111,7 @@ sequenceDiagram
 
 ### Diagrama de Componentes
 
-```mermaid 
+```mermaid
 graph TB
     subgraph Frontend [Frontend (React)]
         component1[Login Page]
@@ -142,4 +142,5 @@ graph TB
     api1 --> db1
     api2 --> db3
     api5 --> db3
+
 ```
