@@ -1,7 +1,3 @@
-<center>
-
-[comment]: <img src="./media/media/image1.png" style="width:1.088in;height:1.46256in" alt="escudo.png" />
-
 ![./media/media/image1.png](./media/logo-upt.png)
 
 **UNIVERSIDAD PRIVADA DE TACNA**
@@ -10,24 +6,20 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto *{Nombre de Proyecto}***
+**Proyecto _{Nombre de Proyecto}_**
 
-Curso: *Topicos de Base de Datos Avanzados I*
+Curso: _Topicos de Base de Datos Avanzados I_
 
-Docente: *Patrick Cuadros Quiroga*
+Docente: _Patrick Cuadros Quiroga_
 
 Integrantes:
 
-***Rodrigo Samael Adonai Lira Alvarez (2019063331)***
-***Angelira Beatriz Romero Roque (2019063331)***
+- **Rodrigo Samael Adonai Lira Alvarez (2019063331)**
+- **Angelira Beatriz Romero Roque (2019063331)**
 
 **Tacna – Perú**
 
 ***2024***
-
-**  
-**
-</center>
 
 ## Vistas de la Aplicación
 
@@ -93,8 +85,7 @@ Integrantes:
 
 - **No Attendance**: Aquí, el estudiante puede llenar un formulario para justificar una inasistencia en un curso. Después de enviar el formulario, la justificación es enviada al servidor a través de la API y el estudiante es redirigido de vuelta a los detalles de asistencia del curso.
 
-
-### Diagrama de Secuencia: Autenticación, Sincronización y Asistencia
+## Diagrama de Secuencia: Autenticación, Sincronización y Asistencia
 
 ```mermaid
 sequenceDiagram
@@ -117,9 +108,7 @@ sequenceDiagram
     API-->>Frontend: Detalles de asistencia del curso
     Frontend-->>Usuario: Muestra detalles de asistencia
 
-### Diagrama de Componentes
-
-```mermaid
+## Diagrama de Componentes
 graph TB
     subgraph Frontend [Frontend (React)]
         component1[Login Page]
@@ -150,5 +139,3 @@ graph TB
     api1 --> db1
     api2 --> db3
     api5 --> db3
-    api6 --> db1
-    api2 --> db2
