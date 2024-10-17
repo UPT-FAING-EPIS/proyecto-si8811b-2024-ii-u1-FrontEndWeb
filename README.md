@@ -189,8 +189,7 @@ sequenceDiagram
     API-->>Frontend: Detalles de asistencia del curso
     Frontend-->>Usuario: Muestra detalles de asistencia
  ```
-
-### Diagrama de Componentes
+## Diagrama de Componentes
 
 ```mermaid
 graph TB
@@ -202,12 +201,12 @@ graph TB
     end
 
     subgraph Backend [Backend (API)]
-        api1[/api/v1/auth/login]
-        api2[/api/v1/attendance]
-        api3[/api/v1/sync/data]
-        api4[/api/v1/sync/schedule]
-        api5[/api/v1/sync/attendance]
-        api6[/api/v1/auth/create-account]
+        api1[/api/v1/auth/login/]
+        api2[/api/v1/attendance/]
+        api3[/api/v1/sync/data/]
+        api4[/api/v1/sync/schedule/]
+        api5[/api/v1/sync/attendance/]
+        api6[/api/v1/auth/create-account/]
     end
 
     subgraph Database [Base de Datos]
@@ -223,5 +222,4 @@ graph TB
     api1 --> db1
     api2 --> db3
     api5 --> db3
-
 ```
