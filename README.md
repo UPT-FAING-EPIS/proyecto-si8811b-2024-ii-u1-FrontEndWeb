@@ -6,7 +6,7 @@
 
 **Escuela Profesional de Ingeniería de Sistemas**
 
-**Proyecto _{Nombre de Proyecto}_**
+**Proyecto _Asistencia UPT_**
 
 Curso: _Topicos de Base de Datos Avanzados I_
 
@@ -107,8 +107,11 @@ sequenceDiagram
     Frontend->>API: GET /api/v1/attendance (curso específico)
     API-->>Frontend: Detalles de asistencia del curso
     Frontend-->>Usuario: Muestra detalles de asistencia
+ ```
 
-## Diagrama de Componentes
+### Diagrama de Componentes
+
+```mermaid 
 graph TB
     subgraph Frontend [Frontend (React)]
         component1[Login Page]
@@ -139,3 +142,4 @@ graph TB
     api1 --> db1
     api2 --> db3
     api5 --> db3
+```
