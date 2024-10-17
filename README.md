@@ -15,11 +15,92 @@ Docente: _Patrick Cuadros Quiroga_
 Integrantes:
 
 - **Rodrigo Samael Adonai Lira Alvarez (2019063331)**
-- **Angelira Beatriz Romero Roque (2019063331)**
+- **Angelira Beatriz Romero Roque (2019063327)**
 
 **Tacna – Perú**
 
 ***2024***
+
+## Descripción General del Proyecto
+
+El software desarrollado es una plataforma integral de gestión de **asistencia**, **sincronización de datos** y **autenticación de usuarios**, diseñada para optimizar y automatizar el control de personal en organizaciones. La solución está compuesta por varios componentes interconectados que permiten a los usuarios realizar tareas clave como el registro de asistencia, la validación de identidad y la sincronización de información entre sistemas remotos y locales.
+
+### Funcionalidades Principales
+
+1. **Autenticación de Usuarios**: El sistema implementa un mecanismo de autenticación robusto, utilizando tokens JWT (JSON Web Token) para gestionar el acceso a las diferentes áreas del sistema. Cada usuario puede registrarse e iniciar sesión utilizando credenciales verificadas, garantizando la seguridad de la plataforma.
+
+2. **Gestión de Asistencia**: La aplicación permite a los usuarios (administradores y empleados) registrar y consultar asistencia en tiempo real. Los administradores pueden visualizar informes detallados de asistencia, verificar ausencias y controlar entradas y salidas en función de las horas trabajadas.
+
+3. **Sincronización de Datos**: La plataforma incluye una funcionalidad de sincronización para gestionar eficientemente la transferencia de datos entre servidores locales y en la nube. Esto asegura que los registros de asistencia y autenticación se mantengan actualizados en tiempo real, incluso en entornos distribuidos.
+
+4. **Interfaz de Usuario Intuitiva**: El frontend de la aplicación está diseñado con una interfaz amigable y fácil de usar, lo que permite a los usuarios acceder a las funciones de la plataforma de manera rápida y eficiente. Se ha utilizado un enfoque responsivo para que la interfaz se adapte a diferentes dispositivos.
+
+5. **API RESTful**: La aplicación expone un conjunto de servicios a través de una API REST, lo que permite a otros sistemas interactuar con la plataforma para obtener y enviar datos. Estos servicios facilitan la integración con sistemas de terceros, como sistemas de nómina o ERPs, para automatizar procesos empresariales clave.
+
+### Componentes Técnicos
+- **Frontend**: La interfaz está desarrollada utilizando React (u otro framework JavaScript de preferencia), ofreciendo una experiencia interactiva y dinámica para los usuarios finales.
+  
+### Objetivos del Proyecto
+
+El objetivo principal del software es ofrecer una solución eficiente y confiable para el manejo de personal en empresas de distintos tamaños, permitiendo:
+- Automatizar el proceso de control de asistencia.
+- Reducir errores manuales en el registro y validación de información.
+- Facilitar la integración de sistemas de información a través de servicios REST.
+- Ofrecer un entorno seguro para la gestión de usuarios y datos sensibles.
+
+Este sistema está diseñado para ser escalable y adaptable a diversas necesidades empresariales, mejorando la eficiencia en la gestión de recursos humanos y optimizando los procesos internos.
+
+## Instalación
+
+Sigue los pasos a continuación para instalar las dependencias del proyecto y correr la aplicación correctamente en tu entorno local.
+
+1. **Clonar el Repositorio**
+
+   Primero, clona este repositorio en tu máquina local usando git:
+
+   ```bash
+   git clone https://github.com/usuario/nombre-del-repositorio.git](https://github.com/UPT-FAING-EPIS/proyecto-si8811b-2024-ii-u1-FrontEndWeb.git
+   
+2. **Instalación de Dependencias**
+
+Este proyecto utiliza varias dependencias que deben instalarse antes de ejecutar la aplicación. 
+
+### El Frontend (React):
+
+Instala Node.js: Si aún no tienes Node.js instalado en tu sistema, descárgalo e instálalo desde el sitio oficial de Node.js.
+
+Una vez que tengas Node.js instalado, navega al directorio del frontend (si tu proyecto está separado en un subdirectorio)
+
+```bash
+cd sistema-asistencia
+```
+Instala las dependencias del proyecto usando el siguiente comando:
+
+```bash
+npm install
+```
+Esto instalará todas las dependencias listadas en el archivo package.json.
+
+3. **Ejecutar el Proyecto**
+
+Una vez instaladas las dependencias, puedes ejecutar  el frontend de la siguiente manera.
+###Ejecutar el FrontEnd
+Navega al directorio del frontend (si está separado):
+
+```bash
+cd sistema-asistencia
+```
+Ejecuta el siguiente comando para iniciar la aplicación frontend:
+
+```bash
+npm start
+```
+4. **Acceder a la aplicacion**
+Una vez que el frontend estén en ejecución, puedes acceder a la aplicación desde tu navegador.
+
+-**Interfaz del usuario (Frontend)**: Visita http://localhost:3000 para interactuar con la aplicación.
+
+Esto iniciará la aplicación en modo de desarrollo, y podrás acceder a la interfaz en http://localhost:3000.
 
 ## Vistas de la Aplicación
 
