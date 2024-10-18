@@ -193,33 +193,33 @@ sequenceDiagram
 
 ```mermaid
 graph TB
-    subgraph Frontend [Frontend (React)]
-        component1[Login Page]
-        component2[Student Courses]
-        component3[Attendance Details]
-        component4[No Attendance Justification]
-    end
+  subgraph Frontend
+    component1[Login]
+    component2[Student Courses]
+    component3[Attendance Details]
+    component4[No Attendance Justification]
+  end
 
-    subgraph Backend [Backend (API)]
-        api1[/api/v1/auth/login/]
-        api2[/api/v1/attendance/]
-        api3[/api/v1/sync/data/]
-        api4[/api/v1/sync/schedule/]
-        api5[/api/v1/sync/attendance/]
-        api6[/api/v1/auth/create-account/]
-    end
+  subgraph Backend (API)
+    api1[/api/v1/auth/login/ (POST)]
+    api2[/api/v1/attendance/ (GET, POST, PUT)]
+    api3[/api/v1/sync/data/ (POST)]
+    api4[/api/v1/sync/schedule/ (POST)]
+    api5[/api/v1/sync/attendance/ (POST)]
+    api6[/api/v1/auth/create-account/ (POST)]
+  end
 
-    subgraph Database [Base de Datos]
-        db1[(Usuarios)]
-        db2[(Cursos)]
-        db3[(Asistencias)]
-    end
+  subgraph Database
+    db1[(Users)]
+    db2[(Courses)]
+    db3[(Attendances)]
+  end
 
-    component1 --> api1
-    component2 --> api2
-    component3 --> api5
-    component4 --> api5
-    api1 --> db1
-    api2 --> db3
-    api5 --> db3
+  component1 --> api1
+  component2 --> api2
+  component3 --> api5
+  component4 --> api5
+  api1 --> db1
+  api2 --> db3
+  api5 --> db3
 ```
